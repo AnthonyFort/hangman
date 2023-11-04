@@ -9,11 +9,11 @@ A Hangman class is defined to control the game logic. The Hangman's attributes k
 
 ## Project File Structure
 
-This game is run from a single file, `milestone_5.py`.
+This game is run from a single file, `hangman.py`.
 
 ## Usage Instructions
 
-The game is run from the command line. Inside the directory, run `python milestone_5.py` to play the game.
+The game is run from the command line. Inside the directory, run `python hangman.py` to play the game.
 
 ## License Information
 
