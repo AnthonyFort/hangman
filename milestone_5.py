@@ -62,7 +62,12 @@ class Hangman():
 word_list = ['apple', 'orange', 'pear', 'cherry', 'strawberry']
 
 def play_game(word_list):
-  
+  '''
+  This function, when called, triggers the start of the game.
+  It tracks the player's progress by tracking the number of
+  lives they have remaining as well as the number of un-guessed 
+  letters remaining in the chosen word.
+  '''
   num_of_lives = 5
   game = Hangman(word_list, num_of_lives)
 
@@ -75,6 +80,5 @@ def play_game(word_list):
     if game.num_of_lives != 0 and game.num_of_letters == 0:
       print('Congratulations! You won the game!')  
       break
-
 
 play_game(word_list)
