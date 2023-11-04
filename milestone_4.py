@@ -14,6 +14,11 @@ class Hangman():
       guess = guess.lower()
       if guess in self.word:
         print(f'Good guess! {guess} is in the word')
+        for letter in self.word:
+          if guess == letter:
+            position = self.word.index(letter)
+            self.word_guessed[position] = guess 
+        self.num_letters -= 1  
 
   def ask_for_input(self):
     while True:
@@ -25,12 +30,6 @@ class Hangman():
       else:
         self.check_guess(guess)  
       self.list_of_guesses.append(guess)  
-
-  def update_progress(self, guess):
-    for letter in self.word:
-      if guess == letter:
-        position = self.word.index(letter)
-        self.word_guessed[position] = guess 
 
   @staticmethod  
   def calc_unique_letters_count(word, word_guessed):  
@@ -47,4 +46,4 @@ hang = Hangman(word_list)
 # print(hang.word_guessed)
 # print(hang.num_letters)
 
-hang.ask_for_input()
+
