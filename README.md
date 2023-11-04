@@ -7,6 +7,13 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 ## Description
 
+An ask_for_input function uses Python's input function to receive a user's guess. It checks the validity of the guess by checking: 
+
+1) That the guess is one-character long
+1) That the guess is a letter (using Python's isalpha method)
+
+A function called check_guess then checks whether or not that letter is contained in the chosen word.
+
 ## Installation Instructions
 
 ## Usage Instructions
