@@ -3,23 +3,18 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-## Table of Contents
-
 ## Description
 
-An ask_for_input function uses Python's input function to receive a user's guess. It checks the validity of the guess by checking: 
-
-1) That the guess is one-character long
-1) That the guess is a letter (using Python's isalpha method)
-
-A function called check_guess then checks whether or not that letter is contained in the chosen word.
-
-A Hangman class was defined to control the game logic. The Hangman's attributes keep track of how the player is doing while the class's methods provide the logic for processing each guess the player makes.
-
-## Installation Instructions
-
-## Usage Instructions
+A Hangman class is defined to control the game logic. The Hangman's attributes keep track of how the player is doing while the class's methods provide the logic for processing each guess the player makes.
 
 ## Project File Structure
 
+This game is run from a single file, `milestone_5.py`.
+
+## Usage Instructions
+
+The game is run from the command line. Inside the directory, run `python milestone_5.py` to play the game.
+
 ## License Information
+
+This was a project completed as part of the AI Core skills bootcamp. Please contact AI Core for licensing information.
