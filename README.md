@@ -14,6 +14,8 @@ An ask_for_input function uses Python's input function to receive a user's guess
 
 A function called check_guess then checks whether or not that letter is contained in the chosen word.
 
+A Hangman class was defined to control the game logic. The Hangman's attributes keep track of how the player is doing while the class's methods provide the logic for processing each guess the player makes.
+
 ## Installation Instructions
 
 ## Usage Instructions
