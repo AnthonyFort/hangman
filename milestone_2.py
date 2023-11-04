@@ -1,5 +1,6 @@
 import random
 
+# Defines a list of words from which Python will select one at random. 
 word_list = ['apple', 'orange', 'pear', 'cherry', 'strawberry']
 word = random.choice(word_list)
 
