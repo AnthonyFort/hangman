@@ -10,6 +10,12 @@ class Hangman():
     self.word_list = word_list
     self.list_of_guesses = []
 
+  def check_guess(self, guess):
+      guess = guess.lower()
+      print(guess)
+      if guess in self.word:
+        print(f'Good guess! {guess} is in the word')
+
 
   def update_progress(self, guess):
     for letter in self.word:
@@ -31,4 +37,5 @@ hang = Hangman(word_list)
 # hang.update_progress('e')
 # print(hang.word_guessed)
 # print(hang.num_letters)
-print(hang.list_of_guesses)
+
+hang.check_guess('e')
